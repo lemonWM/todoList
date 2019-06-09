@@ -16,7 +16,7 @@ h2 {
 section {
     margin: 0;
     padding: 0;
-    padding-bottom: 300px;
+    min-height: 100vh;
     background: #e2ebe0
 }
 .mainTitle {
