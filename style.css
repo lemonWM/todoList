@@ -16,8 +16,7 @@ h2 {
 section {
     margin: 0;
     padding: 0;
-    height: 100%;
-    background: #e2ebe0
+    
 }
 .mainTitle {
     display: flex;
@@ -41,7 +40,7 @@ section {
     border: solid 1px #0b99a7;
     height: 30px;
     width: 130px;
-    background: inherit;
+    background: #e2ebe0;
     border-radius: 30px;
     padding: 5px;
     color: #003659;
@@ -54,7 +53,7 @@ section {
     border: solid 1px #0b99a7;
     height: 40px;
     width: 165px;
-    background: inherit;
+    background: #e2ebe0;
     border-radius: 30px;
     padding: 5px;
     color: #003659;
@@ -67,7 +66,7 @@ section {
     border: solid 1px #37c4aa;
     height: 40px;
     width: 80px;
-    background: inherit;
+    background: #e2ebe0;
     border-radius: 30px;
     padding: 5px;
     color: #37c4aa;
