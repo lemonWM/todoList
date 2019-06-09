@@ -1,0 +1,138 @@
+
+body, h1{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0
+}
+h2 {
+    color: #0b99a7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px
+}
+section {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 300px;
+    background: #e2ebe0
+}
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    align-items: center;
+}
+.title {
+    color: #003659;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300
+}
+.mainContent, .buttonNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+.namePlace {
+    border: solid 1px #0b99a7;
+    height: 30px;
+    width: 130px;
+    background: inherit;
+    border-radius: 30px;
+    padding: 5px;
+    color: #003659;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px
+}
+.selectList {
+    border: solid 1px #0b99a7;
+    height: 40px;
+    width: 130px;
+    background: inherit;
+    border-radius: 30px;
+    padding: 5px;
+    color: #003659;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px
+}
+.btn {
+    border: solid 1px #37c4aa;
+    height: 40px;
+    width: 80px;
+    background: inherit;
+    border-radius: 30px;
+    padding: 5px;
+    color: #37c4aa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    transition: all ease-in .15s;
+    -webkit-transition: all ease-in .15s;
+    -moz-transition: all ease-in .15s;
+    -ms-transition: all ease-in .15s;
+    -o-transition: all ease-in .15s;
+}
+.btn:hover {
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(11,153,167,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(11,153,167,1);
+    box-shadow: 0px 0px 2px 0px rgba(11,153,167,1);
+}
+
+.mainList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainList ul {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.listElement {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none; 
+    color: #003659;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    letter-spacing: 1px;
+}
+.listElement .removeButton {
+    border: none;
+    margin-left: 20px;
+    background: inherit;
+    position: absolute;
+    right: 0px;
+}   
+.removeButton::after {
+    display: inline-block;
+    content: "\f00d";
+    font-family: 'Font Awesome\ 5 Free';
+    color: #003659;
+    font-weight: 900;
+    font-size: 16px
+}
+.randomElement {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.randomElement output {
+    color: #0b99a7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
