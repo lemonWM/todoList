@@ -86,11 +86,19 @@
         }
     }   // remove all element from list ul 
     
-    
-    
-    
-    
+    function removeIndexArr(event, targetArr) {
 
+            selectElement = event.target.parentNode.firstChild.textContent
+            index = targetArr.indexOf(selectElement)
+            targetArr.splice(index, 1)
+
+            if(arrSport.length == 0  && arrNauka.length == 0 && arrGotowanie.length == 0 ) {
+                lotteryElement.value = ''
+                arrToDoList.length = 0
+            } // del index of arrtodolist if last el is del, del random element
+    }; 
+    
+    
     buttonPush.addEventListener('click', function() {
 
         selectedOption = formOption.options[formOption.selectedIndex].value
@@ -98,12 +106,7 @@
         arrToDoList.push(valueOfName)
 
         
-        function removeIndexArr(event, targetArr) {
-            selectElement = event.target.parentNode.firstChild.textContent
-            index = targetArr.indexOf(selectElement)
-            targetArr.splice(index, 1)
-
-        }; // remove index in array after click button delete element
+        // remove index in array after click button delete element
             
 
         if (selectedOption === 'sport') {
