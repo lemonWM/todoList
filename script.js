@@ -146,8 +146,6 @@
 
     removeItem.addEventListener('click', function() {
         
-        
-        
         arrToDoList.length = 0
 
         if(arrToDoList.length === 0 ) {
