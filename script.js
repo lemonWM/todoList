@@ -113,10 +113,10 @@
             createList()
             listSport.appendChild(createElement)
            
-            createButton.addEventListener('click', removeElement);
+            createButton.addEventListener('click', removeElement); 
             createButton.addEventListener('click',  function() { removeIndexArr (event, arrSport);});
             createButton.addEventListener('click',  function() { removeClass (arrSport, listSport);});
-
+           
 
         } else if ( selectedOption === 'learning') {
             arrNauka.push(valueOfName)
@@ -143,9 +143,10 @@
         }
                 // dodawanie elementów do tablic/ dodawanie kontentu 
       }, false);
-      
-    
+
     removeItem.addEventListener('click', function() {
+        
+        
         
         arrToDoList.length = 0
 
@@ -164,16 +165,20 @@
     }); // usuwanie całości - zrobić
 
     lotteryButton.addEventListener('click', function() {
+        
+        if(arrSport.length == 0  && arrNauka.length == 0 && arrGotowanie.length == 0 ) {
+            arrToDoList.length = 0
+        }
 
         function losuj(arr) {
 
             return arr[Math.floor(Math.random() * arr.length)]
     
         }
+
         if(arrToDoList.length > 0) {
         lotteryElement.value = 'Start doing: '+ losuj(arrToDoList)
         }
-
 
     }, false)
 
