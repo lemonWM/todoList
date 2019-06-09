@@ -166,17 +166,21 @@
         
         if(arrSport.length == 0  && arrNauka.length == 0 && arrGotowanie.length == 0 ) {
             arrToDoList.length = 0
-        }
+        } else {
 
-        function losuj(arr) {
+            function losuj(arr) {
 
-            return arr[Math.floor(Math.random() * arr.length)]
+                return arr[Math.floor(Math.random() * arr.length)]
+        
+            }
     
+            if(arrToDoList.length > 0) {
+            lotteryElement.value = 'Start doing: '+ losuj(arrToDoList)
+            }
+
         }
 
-        if(arrToDoList.length > 0) {
-        lotteryElement.value = 'Start doing: '+ losuj(arrToDoList)
-        }
+        
 
     }, false)
 
