@@ -64,7 +64,7 @@ section {
     width: 200px;
     background: #e2ebe0;
     border-radius: 10px;
-    padding: ;
+    padding: 5p;
     color: #003659;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -159,3 +159,17 @@ section {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+@media only screen and (max-width: 600px) {
+    .top_select {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .selectList {
+        width: 210px
+    }
+    .btn {
+        width: 135px
+    }
+  }
