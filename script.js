@@ -1,7 +1,6 @@
-  
-(function() {
+  (function() {
 
-    var namePlace = document.querySelector('.namePlace')
+    let namePlace = document.querySelector('.namePlace')
         buttonPush = document.querySelector('.accept')
         lotteryButton = document.querySelector('.lotteryButton')
         listSport = document.querySelector('.listSport')

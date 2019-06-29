@@ -13,35 +13,37 @@
 </head>
 
 <body>
-    <section>
-        <div class="mainTitle">
-            <h1 class="title">Your Task Menager</h1>
-        </div>
-        <div class="mainContent">
-            <input type="text" class="namePlace" placeholder="Enter task">
-            <select name="your-subject" data-error="Wybierz temat widomości" id='formOption' class="selectList">
-                <option value="" disabled selected>-Choose category-</option>
-                <option value="sport">Sport</option>
-                <option value="learning">Learning</option>
-                <option value="other">Other</option>
-            </select>
-            <div class="buttonNav">
-                <button type="submit" class="accept btn" disabled>Accept</button>
-                <button type="submit" class="removeItem btn">Remove</button>
-                <button type="submit" class="lotteryButton btn">Random</button>
+        <header>
+            <div class="mainTitle">
+                <h1 class="title">Your Task Menager</h1>
             </div>
-            
-        </div>
-        <div class="mainList">
-            <ul class="listSport"></ul>
-            <ul class="listNauka"></ul>
-            <ul class="listGotowanie"></ul>
-        </div>
-        <div class="randomElement">
-            <output class="lotteryElement"></output>  
-        </div>
-         
-    </section>
+        </header>
+        <section>
+            <div class="mainContent">
+                <div>
+                    <input type="text" class="namePlace" placeholder="Enter task">
+                    <select name="your-subject" data-error="Wybierz temat widomości" id='formOption' class="selectList">
+                        <option value="" disabled selected>-Choose category-</option>
+                        <option value="sport">Sport</option>
+                        <option value="learning">Learning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div> 
+                <div class="buttonNav">
+                    <button type="submit" class="accept btn" disabled>Accept</button>
+                    <button type="submit" class="removeItem btn">Remove</button>
+                    <button type="submit" class="lotteryButton btn">Random</button>
+                </div>           
+            </div>
+            <div class="mainList">
+                <ul class="listSport"></ul>
+                <ul class="listNauka"></ul>
+                <ul class="listGotowanie"></ul>
+            </div>
+            <div class="randomElement">
+                <output class="lotteryElement"></output>  
+            </div>
+        </section>  
 
 <script src="script.js"></script> 
 
